@@ -80,7 +80,7 @@ the page.  */
   padding-left: 5px;
 }
 
-/* Rule change 5: This code leverages nesting to make all h3's within sections to be underlined. */
+/* Rule change 5: This code leverages nesting to make all h4's within sections to be underlined. */
 section h4 {
   text-decoration: underline;
   width: 150px; height: 5px;
