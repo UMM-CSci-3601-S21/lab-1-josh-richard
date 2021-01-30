@@ -8,7 +8,7 @@ use float to make something locate itself on the right or left
 
 body {
   padding: 30px;
-  background-color: #7a0019;
+  background-color: #5e7470;
   display: flex; /* this is the flexbox model. It adds responsive design to its items */
   flex-direction: column; /* this says how the flex items will align (e.g. 'row') */
   align-items: center; /* These next two properties center the flex items */
@@ -29,7 +29,7 @@ body {
 }
 
 #main-title {
-  color: #ffde7a;
+  color: #d5d7a1;
   font-family: "Patua One", monospace;
   text-align: center;
   font-size: 4rem;
@@ -40,55 +40,61 @@ h2 {
 }
 
 .section {
-  border-radius: 25px;
+  border-radius: 15px;
   padding: 20px;
+  padding-top: 0px;
+  padding-bottom: 5px;
   border: 5px solid;
   margin: 10px;
   max-width: 48em;
 }
 
-
-#courses {
-  background-color: #ffde7a;
+/** Rule change 1: This code leverages grouping to make both sections the same color and same font. */
+#courses, #pslo {
+  background-color: #bebfc9;
   font-family: "Marcellus", serif;
 }
 
-#pslo {
-  background-color: #d5d6d2;
-  font-family: "Marcellus", serif;
-}
-
+/* Rule change 2: This code leverages the class "cloud" from the HTML file and makes the words with that
+ID blue. */
 .cloud {
-  color: #5e6fad
+  color: #5a73cf
  }
 
+/* Rule change 3: This code leverages the id "tools" from the HTML file in order to make it a section on
+the page.  */
 #tools {
-  padding-left: 20px;
+  padding-left: 30px;
+  padding-bottom: 25px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: #d5d6d2;
+  background-color: #8fb16c;
   font-family: "Marcellus", serif;
-  padding-bottom: 25px;
+  justify-content: left;
 }
 
-
+/* Rule change 4: Positioning for the IDE section. */
 #ideSection {
   padding-top: 40px;
   padding-left: 5px;
 }
 
-#testingSection {
-  padding-top: 40px;
+/* Rule change 5: This code leverages nesting to make all h3's within sections to be underlined. */
+section h4 {
+  text-decoration: underline;
+  width: 150px; height: 5px;
+
 }
 
-#versionControlSection {
+/* Rule change 6: This code leverages grouping to give both of these sections the same amount of padding from the top. */
+#testingSection, #versionControlSection {
   padding-top: 40px;
 }
 
 
 #faculty {
-  background-color: #f9f7f6;
+  background-color: #bebfc9;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -129,7 +135,7 @@ img.pic {
 
 #style-selector {
   position: fixed;
-  background-color: #7a0019;
+  background-color: #5e7470;
   left: 0;
   right: 0;
   top: 0;
@@ -151,7 +157,7 @@ img.pic {
 
 #style-selector li a {
   display: block;
-  color: white;
+  color: #d5d7a1;
   text-align: center;
   padding: 14px 16px; /*this adds some spacing around the items in our "nav bar" */
   text-decoration: none;
@@ -159,11 +165,14 @@ img.pic {
 
 /* Change the link background color to #000 (black) on hover */
 #style-selector li a:hover {
-  background-color: #000;
+  background-color: rgb(146, 54, 54);
 }
 
 #validation {
+  border-radius: 15px;
   font-size: 0.8rem;
-  background-color: #d5d6d2;
-  padding: 25px;
+  background-color: #8fb16c;
+  padding: 15px;
+  padding-top: 0;
+  border: 4px solid #000000;
 }
