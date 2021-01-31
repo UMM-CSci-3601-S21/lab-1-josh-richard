@@ -74,22 +74,20 @@ the page.  */
   justify-content: left;
 }
 
-/* Rule change 4: Positioning for the IDE section. */
-#ideSection {
-  padding-top: 40px;
-  padding-left: 5px;
-}
-
-/* Rule change 5: This code leverages nesting to make all h4's within sections to be underlined. */
+/* Rule change 4: This code leverages nesting to make all h4's within sections to be underlined. */
 section h4 {
   text-decoration: underline;
   width: 150px; height: 5px;
-
 }
 
-/* Rule change 6: This code leverages grouping to give both of these sections the same amount of padding from the top. */
-#testingSection, #versionControlSection {
-  padding-top: 40px;
+/* Rule change 5: This code leverages grouping to give these sections the same amount of padding from the top. */
+#testingSection, #versionControlSection, #ideSection {
+  padding-top: 5px;
+}
+
+#tools h2 {
+  max-height: 1px;
+  width: 75%;
 }
 
 
